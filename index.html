@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบตรวจสอบสถานะห้องพักและข้อมูล - Alisa Female Dormitory</title>
+    <link rel="stylesheet" href="mainstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <input type="radio" name="page_route" id="page_home" class="page-state-radio" checked>
+    <input type="radio" name="page_route" id="page_contact" class="page-state-radio">
+    <input type="radio" name="page_route" id="page_ac_room" class="page-state-radio">
+    <input type="radio" name="page_route" id="page_fan_room" class="page-state-radio">
+    <div class="main-wrapper">
+        <nav class="navbar">
+            <div class="header-titles">
+                <h1 class="main-system-title">ระบบตรวจสอบสถานะห้องพักและข้อมูล</h1>
+                <p class="sub-system-title">Room Availability & Directory</p>
+                <div class="nav-links">
+                    <label for="page_home" class="nav-item nav-home-label">HOME</label>
+                    <label for="page_contact" class="contact-btn nav-contact-label">ช่องทางติดต่อ</label>
+                </div>
+            </div>
+        </nav>
+        <div class="page-content page-home-view">
+            <div class="hero-banner">
+                <div class="hero-overlay">
+                    <div class="hero-content">
+                        <span class="badge">Female Dormitory</span>
+                        <h2 class="hero-title">Alisa Female Dormitory</h2>
+                        <p class="hero-desc">ใกล้ ประตู 1 ม.อ.สุราษฎร์ ฯ /ห่าง ว.ค.สุราษฎร์ 1 กม.</p>
+                    </div>
+                    <div class="search-bar-container">
+                        <form class="search-form" action="#" onsubmit="return false;">
+                            <input type="radio" name="room_type" id="type_all" value="all" checked class="type-radio">
+                            <input type="radio" name="room_type" id="type_ac" value="ac" class="type-radio">
+                            <input type="radio" name="room_type" id="type_fan" value="fan" class="type-radio">
+                            <div class="search-glass-wrapper">
+                                <div class="search-input-group">
+                                    <span class="search-icon">🔍</span>
+                                    <span class="dynamic-badge badge-ac">ห้องแอร์ ❄️</span>
+                                    <span class="dynamic-badge badge-fan">ห้องพัดลม 🍃</span>
+                                    <input type="text" placeholder="ค้นหาห้องพัก หรือ สิ่งอำนวยความสะดวก..." class="search-input">
+                                </div>
+                                <div class="room-type-options">
+                                    <label for="type_ac" class="radio-label label-ac">
+<span class="radio-custom"></span>
+<span class="radio-text">ห้องแอร์ ❄️</span>
+</label>
+                                    <label for="type_fan" class="radio-label label-fan">
+<span class="radio-custom"></span>
+<span class="radio-text">ห้องพัดลม 🍃</span>
+</label>
+                                </div>
+                                <label for="page_ac_room" class="search-submit-btn trigger-ac-search">ค้นหาห้องพัก</label>
+                                <label for="page_fan_room" class="search-submit-btn trigger-fan-search">ค้นหาห้องพัก</label>
+                                <button type="submit" class="search-submit-btn trigger-default-search">ค้นหาห้องพัก</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-content page-ac-view">
+            <div class="ac-room-container">
+                <div class="ac-header">
+                    <h2 class="ac-title">ห้องแอร์</h2>
+                    <p class="ac-subtitle">Air-conditioned Room</p>
+                </div>
+                <div class="ac-gallery-section">
+                    <div class="ac-gallery-corner-label">📸 ตัวอย่างรูปห้องพัก</div>
+                    <div class="ac-gallery-slider">
+                        <div class="ac-gallery-track">
+                            <div class="ac-card">
+                                <img src="https://cdn.phototourl.com/member/2026-10-25-8a0a2e5e-23b2-43e6-811c-45c29706b629.jpg" alt="ห้องแอร์ แบบที่ 1" class="ac-img">
+                                <div class="ac-card-overlay">
+                                    <span class="ac-card-title">Air-Conditioned Room 01</span>
+                                    <span class="ac-card-num">01</span>
+                                </div>
+                            </div>
+                            <div class="ac-card">
+                                <img src="https://cdn.phototourl.com/member/2026-10-25-c9ad3475-6ba4-4543-904f-0ca557dd5aea.jpg" alt="ห้องแอร์ แบบที่ 2" class="ac-img">
+                                <div class="ac-card-overlay">
+                                    <span class="ac-card-title">Air-Conditioned Room 02</span>
+                                    <span class="ac-card-num">02</span>
+                                </div>
+                            </div>
+                            <div class="ac-card">
+                                <img src="https://cdn.phototourl.com/member/2026-11-03-ff38418a-4a30-4b6c-895b-713154cf830d.jpg" alt="ห้องแอร์ แบบที่ 3" class="ac-img">
+                                <div class="ac-card-overlay">
+                                    <span class="ac-card-title">Air-Conditioned Room 03</span>
+                                    <span class="ac-card-num">03</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ac-details-glass-box">
+                    <h3 class="ac-details-heading">✨ รายละเอียดและสิ่งอำนวยความสะดวก</h3>
+                    <div class="ac-info-grid">
+                        <div class="ac-info-item">✅️ เฟอร์นิเจอร์ครบ</div>
+                        <div class="ac-info-item">✅️ มีบริการเครื่องซักผ้า หยอดเหรียญ</div>
+                        <div class="ac-info-item">✅️ มีระบบรักษาความปลอดภัย 24ชม.</div>
+                    </div>
+                    <div class="ac-utility-rates">
+                        <div class="rate-badge">⚡️ ค่าไฟ หน่วยละ 7 บาท</div>
+                        <div class="rate-badge">💧 ค่าน้ำ หน่วยละ 20 บาท</div>
+                    </div>
+                    <div class="ac-security-list">
+                        <div class="security-item">🔻 กล้องวงจรปิด</div>
+                        <div class="security-item">🔻 เข้า-ออก สแกนใบหน้า</div>
+                    </div>
+                </div>
+                <div class="ac-pricing-glass-box">
+                    <h3 class="ac-pricing-heading">รายละเอียดเรทราคาห้องพัก</h3>
+                    <div class="floors-container">
+                        <div class="floor-card">
+                            <div class="floor-badge">2nd Floor</div>
+                            <h4 class="floor-title">ชั้น 2</h4>
+                            <div class="price-items-wrapper">
+                                <div class="price-item-row">
+                                    <div class="room-desc-info">
+                                        <span class="room-type-name">ระเบียงหน้า แอร์</span>
+                                        <span class="room-numbers-tag">ห้อง 201 / 202</span>
+                                    </div>
+                                    <div class="room-price-tag">2,800 <span class="currency">บาท/เดือน</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floor-card">
+                            <div class="floor-badge">3rd Floor</div>
+                            <h4 class="floor-title">ชั้น 3</h4>
+                            <div class="price-items-wrapper">
+                                <div class="price-item-row">
+                                    <div class="room-desc-info">
+                                        <span class="room-type-name">ระเบียงหน้า แอร์</span>
+                                        <span class="room-numbers-tag">ห้อง 301 / 302</span>
+                                    </div>
+                                    <div class="room-price-tag">2,800 <span class="currency">บาท/เดือน</span></div>
+                                </div>
+                                <div class="price-item-row">
+                                    <div class="room-desc-info">
+                                        <span class="room-type-name">ระเบียงข้าง แอร์</span>
+                                        <span class="room-numbers-tag">ห้อง 303 / 305</span>
+                                    </div>
+                                    <div class="room-price-tag">2,400 <span class="currency">บาท/เดือน</span></div>
+                                </div>
+                                <div class="price-item-row">
+                                    <div class="room-desc-info">
+                                        <span class="room-type-name">ห้องไม่มีระเบียง แอร์</span>
+                                        <span class="room-numbers-tag">ห้อง 304</span>
+                                    </div>
+                                    <div class="room-price-tag">2,200 <span class="currency">บาท/เดือน</span></div>
+                                </div>
+                                <div class="price-item-row">
+                                    <div class="room-desc-info">
+                                        <span class="room-type-name">ห้องระเบียงหลัง แอร์</span>
+                                        <span class="room-numbers-tag">ห้อง 306 / 307</span>
+                                    </div>
+                                    <div class="room-price-tag">2,800 <span class="currency">บาท/เดือน</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="status-glass-box">
+                    <h3 class="status-heading">ตรวจสอบสถานะห้องพักเเละจองได้เลยที่นี่</h3>
+                    <div class="status-content-wrapper">
+                        <a href="https://script.google.com/macros/s/AKfycbxmZHTMV3_GR220YathTEVafK8KeHRTKYHUZRPD8OdNR2IshYJ1u8flGEE0JrUib7i0/exec" target="_blank" class="status-action-btn">ตรวจสอบสถานะและจองห้องพัก</a>
+                    </div>
+                </div>
+                <div class="ac-back-action">
+                    <label for="page_home" class="ac-back-btn">‹ กลับหน้าหลัก</label>
+                </div>
+            </div>
+        </div>
+        <div class="page-content page-fan-view">
+            <div class="ac-room-container">
+                <div class="ac-header">
+                    <h2 class="ac-title">ห้องพัดลม</h2>
+                    <p class="ac-subtitle">Fan-cooled room</p>
+                </div>
+                <div class="ac-gallery-section">
+                    <div class="ac-gallery-corner-label">📸 ตัวอย่างรูปห้องพัก</div>
+                    <div class="ac-gallery-slider">
+                        <div class="ac-gallery-track">
+                            <div class="ac-card">
+                                <img src="https://cdn.phototourl.com/member/2026-10-25-ca62e854-f209-41a3-9a83-3a8826c5f1cf.jpg" alt="ห้องพัดลม แบบที่ 1" class="ac-img">
+                                <div class="ac-card-overlay">
+                                    <span class="ac-card-title">Fan Room 01</span>
+                                    <span class="ac-card-num">01</span>
+                                </div>
+                            </div>
+                            <div class="ac-card">
+                                <img src="https://cdn.phototourl.com/member/2026-10-25-bd6dbe55-28dd-4ca0-bda2-0242c6648b71.jpg" alt="ห้องพัดลม แบบที่ 2" class="ac-img">
+                                <div class="ac-card-overlay">
+                                    <span class="ac-card-title">Fan Room 02</span>
+                                    <span class="ac-card-num">02</span>
+                                </div>
+                            </div>
+                            <div class="ac-card">
+                                <img src="https://cdn.phototourl.com/member/2026-10-25-c924c2e1-143b-4fdd-aabf-6c6aa98a47eb.jpg" alt="ห้องพัดลม แบบที่ 3" class="ac-img">
+                                <div class="ac-card-overlay">
+                                    <span class="ac-card-title">Fan Room 03</span>
+                                    <span class="ac-card-num">03</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ac-details-glass-box">
+                    <h3 class="ac-details-heading">✨ รายละเอียดและสิ่งอำนวยความสะดวก</h3>
+                    <div class="ac-info-grid">
+                        <div class="ac-info-item">✅️ เฟอร์นิเจอร์ครบ</div>
+                        <div class="ac-info-item">✅️ มีบริการเครื่องซักผ้า หยอดเหรียญ</div>
+                        <div class="ac-info-item">✅️ มีระบบรักษาความปลอดภัย 24ชม.</div>
+                    </div>
+                    <div class="ac-utility-rates">
+                        <div class="rate-badge">⚡️ ค่าไฟ หน่วยละ 7 บาท</div>
+                        <div class="rate-badge">💧 ค่าน้ำ หน่วยละ 20 บาท</div>
+                    </div>
+                    <div class="ac-security-list">
+                        <div class="security-item">🔻 กล้องวงจรปิด</div>
+                        <div class="security-item">🔻 เข้า-ออก สแกนใบหน้า</div>
+                    </div>
+                </div>
+                <div class="ac-pricing-glass-box">
+                    <h3 class="ac-pricing-heading">รายละเอียดเรทราคาห้องพัก</h3>
+                    <div class="floors-container">
+                        <div class="floor-card">
+                            <div class="floor-badge">2nd Floor</div>
+                            <h4 class="floor-title">ชั้น 2</h4>
+                            <div class="price-items-wrapper">
+                                <div class="price-item-row">
+                                    <div class="room-desc-info">
+                                        <span class="room-type-name">พัดลมระเบียงข้าง</span>
+                                        <span class="room-numbers-tag">ห้อง 203 / 205</span>
+                                    </div>
+                                    <div class="room-price-tag">2,200 <span class="currency">บาท/เดือน</span></div>
+                                </div>
+                                <div class="price-item-row">
+                                    <div class="room-desc-info">
+                                        <span class="room-type-name">ห้องพัดลมไม่มีระเบียง</span>
+                                        <span class="room-numbers-tag">ห้อง 204</span>
+                                    </div>
+                                    <div class="room-price-tag">1,500 <span class="currency">บาท/เดือน</span></div>
+                                </div>
+                                <div class="price-item-row">
+                                    <div class="room-desc-info">
+                                        <span class="room-type-name">ห้องพัดลมระเบียงหลัง</span>
+                                        <span class="room-numbers-tag">ห้อง 206 / 207</span>
+                                    </div>
+                                    <div class="room-price-tag">2,400 <span class="currency">บาท/เดือน</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="status-glass-box">
+                    <h3 class="status-heading">ตรวจสอบสถานะห้องพักเเละจองได้เลยที่นี่</h3>
+                    <div class="status-content-wrapper">
+                        <a href="https://script.google.com/macros/s/AKfycbxmZHTMV3_GR220YathTEVafK8KeHRTKYHUZRPD8OdNR2IshYJ1u8flGEE0JrUib7i0/exec" target="_blank" class="status-action-btn">ตรวจสอบสถานะและจองห้องพัก</a>
+                    </div>
+                </div>
+                <div class="ac-back-action">
+                    <label for="page_home" class="ac-back-btn">‹ กลับหน้าหลัก</label>
+                </div>
+            </div>
+        </div>
+        <div class="page-content page-contact-view">
+            <div class="contact-card-container">
+                <div class="contact-glass-card">
+                    <h2 class="contact-card-title">ช่องทางติดต่อผู้จัดการหอ</h2>
+                    <div class="manager-avatar-wrapper">
+                        <img src="https://cdn.phototourl.com/member/2026-11-03-aca1787f-b2ca-45ec-974e-3c84af2e7c92.jpg" alt="ผู้จัดการหอพัก" class="manager-avatar">
+                    </div>
+                    <div class="contact-methods-list">
+                        <a href="https://www.facebook.com/profile.php?id=1093655176" target="_blank" class="contact-item-box fb-box">
+                            <div class="contact-icon-bg">📘</div>
+                            <div class="contact-item-info">
+                                <span class="contact-label">Facebook</span>
+                                <span class="contact-value">Ratjirra Phromchouy</span>
+                            </div>
+                        </a>
+                        <div class="contact-item-box line-box">
+                            <div class="contact-icon-bg">💬</div>
+                            <div class="contact-item-info">
+                                <span class="contact-label">LINE ID</span>
+                                <span class="contact-value">annsasithorn_ok</span>
+                            </div>
+                        </div>
+                        <a href="tel:0887680869" class="contact-item-box phone-box">
+                            <div class="contact-icon-bg">📞</div>
+                            <div class="contact-item-info">
+                                <span class="contact-label">เบอร์โทรศัพท์</span>
+                                <span class="contact-value">088 768 0869</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
